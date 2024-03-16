@@ -1,0 +1,53 @@
+\documentclass[14pt,aspectratio=169]{beamer}
+\usepackage{media9}
+\usepackage{animate}
+\usetheme{Copenhagen}
+\definecolor{dedangreen}{rgb}{.125,.5,.25}
+\usecolortheme[named=dedangreen]{structure}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercovered{transparent}
+\usepackage{graphicx, animate}
+\usepackage{pgfplots,animate}
+\usepackage{booktabs}
+
+\begin{document}
+\title[Stock market Recovery time]{Modeling the Recovery Time of Stock Prices using Accelerated Failure Time Model }
+\author{Gathu \and Kipyegon}
+\institute{Dedan Kimathi University of Technology}
+\maketitle
+\begin{frame}
+  \frametitle{Exchange plot}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{D:/PETER/market recovery.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Data}
+  \begin{table}[htbp]
+    \centering
+    \caption{Dataset of Companies}
+    \label{tab:kenyan_companies}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llccccccc@{}}
+    \toprule
+    \textbf{Company} & \textbf{Sector} & \textbf{Period} & \textbf{Stock Market Index} & \textbf{Inflation Rate} & \textbf{Exchange Rate} & \textbf{Closing Price} & \textbf{Duration in Months} & \textbf{Event} \\ \midrule
+    Safaricom & Service & 2008-2010 & 4000 & 6.0\% & 80.50 & 25.60 & 8 & 1 \\
+    Bamburi & Industry & 2008-2010 & 2500 & 8.5\% & 70.20 & 48.75 & 5 & 1\\
+    
+    Nation Media & Service & 2008-2010 & 3200 & 5.4\% & 85.10 & 55.80 & 24 & 0 \\
+    Mumias & Industry & 2008-2010 & 1800 & 7.2\% & 75.80 & 33.20 & 7 & 0\\
+    KCB & Financery & 2008-2010 & 2800 & 6.8\% & 78.90 & 72.40 & 2 & 1\\
+    East African Breweries & Industry & 2008-2010 & 2200 & 7.5\% & 82.30 & 40.15 & 2 & 1 \\ \bottomrule
+    \end{tabular}%
+    }
+\end{table}
+  \transduration{5} % Transition duration in seconds
+  \transblindshorizontal % Transition effect
+\end{frame}
+\begin{frame}
+  \frametitle{Slide 3}
+  Content of slide 3
+\end{frame}
+
+\end{document}

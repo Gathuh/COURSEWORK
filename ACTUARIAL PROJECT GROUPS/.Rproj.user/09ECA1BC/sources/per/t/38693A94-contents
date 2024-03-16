@@ -13,7 +13,7 @@ output:
 ```{r,warning=F,message=F,echo=F}
 
 
-x <- 1:43
+x <- 1:40
 n <- length(x)
 
 while (n >= 2) {
@@ -23,8 +23,13 @@ while (n >= 2) {
   indices <- which(x %in% group)  # Find indices of elements in x that are equal to any element in group
   x <- x[-indices]  # Remove elements from x based on their indices
 }
+if(length(x)>0){
+  cat('Oops "bona fide student": ',x,' you did not get yourself a partner')
+}else{
+  cat("All Students were grouped")
+}
 
-cat('Oops "bona fide student": ',x,' you did not get yourself a partner')
+
 
 ```
 

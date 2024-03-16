@@ -1,0 +1,90 @@
+\documentclass[twoside,a4paper,12pt]{article}
+
+\usepackage{fancyhdr,times,geometry,amsmath}
+\usepackage{color}
+\usepackage{amsmath}
+\geometry{a4paper, top=0.75in, bottom=0.75in, left=0.75in, right=0.75in}
+
+
+\begin{document}
+	
+	\begin{flushleft} 
+			\large{\bf{Name: Gathu Macharia     Registration Number: S030-01-2954/2021\\
+					   Name:Collins Kipyegon        Registration Number: S030-01-2154/2021\\}} \vspace*{0.75in}
+	\end{flushleft}
+	
+	\begin{center} \Large{ \bf{Using Accelerated Failure Time model to Predicting  time until Volatility cluster changes in Stock Market}} \end{center}	
+
+
+\section*{Introduction} Stock market prediction focus on developing approaches to determine the future price of a stock or othere financial products. Stock market predictions is regarded as a challenging task due to the high volatiity and non linear relationship, driven short term flactuations in investment demand. Some researchers have even found that man standard econemetric models are unable to produce better prediction than the random walk model which has also encouraged researchers to develope more predictive models.
+
+
+
+\section*{Problem statement}In the field of stock market forecasting, most early models were dependant on convectional statistical methods such as time series models and multivariate analysis.  In this method the stock movement was modelled as a function of time series and was solved as regression problem. However stock prices are difficult to predict due to their chaotic nature. Furthermore, there are some assumptions about the variables used in statistical methods, which may not be suitable for those dataset that do not follow the statistical distribution.most models have not  solved the problem for time untill voltility cluster changes in stock markets.
+
+More generally survival analysis involve the modeling of time to event data. in the context of volatility in stock market forecast , volatility clustering are considered as two events in survival analysis literature. We attempt to answer quetions about volatility changes at different states and what rate will stock prices fall or rise.
+
+
+
+\section*{Research Objectives} 
+\subsection*{General Objectives}To predict the time until volatility cluster changes which can be used as the indicators to determine the future stock price.
+\subsection*{Specific objectives}
+\begin{itemize}
+	\item To fit  K-means algorithm.
+	\item To fit   Accelerated Failure Time model.
+	\item  To test adequacy of the model.
+	\item To predict  time until the volatility clustering change.
+	\item To check the accuaracy of the prediction.
+	
+	
+\end{itemize}
+
+
+\section*{Literature review}Various models have been proposed for investigating volatility; ranging from time series based volatility models such as exponential smoothening, the Garman-Klass model, heteroscedasticity models  such  as  ARCH  and  GARCH  models,  options-implied  volatility  models  such  as  the Classical Black-Scholes equation among others (Onwukwe et al., 2011). The  essence  is  to  build volatility model for risk forecasting on the stock market in order to provide investors and policy makers information regarding the future performance of the market. However, the most widely used  are  the  family  of  heteroscedasticity  models  where  the  conditional  variance  of  the distribution is regressed  as  a function  of  previous information and  such  models have  become very  popular  because  of  their  capability  in  estimating  the  variance  of  a series (Enders,  2004). However,  since  the  introduction  of  heteroscedasticity,  there  are  large  number  of  empirical applications on financial time series in both developed and developing countries to address the concept of  volatility of stock market returns using the family of such models known as ARCH and  GARCH  models  (Emenike,  2010; Ahmed  and  Suliman,  2011).  These  models  require  two distinct specifications, namely the mean and variance equations where the mean is the same for every family  of the  volatility models  (Ekong  and  Onye,  2017).  Furthermore,  these  models  are divided  into  symmetric  and  asymmetric.  Symmetric  volatility  models  are  heteroscedasticity models where the conditional variance depends only on the magnitude of the return of an asset and  not  on  its  sign.  The  widely  used  symmetric  volatility  models  include  autoregressive conditional  heteroscedasticity  (ARCH)  model,  generalized  autoregressive  conditional heteroscedasticity   (GARCH)  model  and  GARCH-in-Mean  (GARCH-M)  model.  While  the asymmetric models include EGAECH, TGARCH and PGARCH designed to capture the issue of asymmetric effect which the symmetric models are not be able to (Ibrahim, 2017). Furthermore,  the  modelling  in  this  paper  include  the  all share index  (ASI)  which  the  market returns will be derived from and the lag of lagged trading volume (logVolumet-1) as well as the structural  breaks  which  both  will  be  incorporated  in  the  conditional  variance  equation.  The rationale  for  Lamoureux and  Lastrapes  (1990)  to  propose  the use  of  the  lag  of  trade  volume instead of  the contemporaneous trade volume series is that it  may not be strictly exogenous to stock market returns. More so, the logic for not using the absolute lag of the trade volume series but  its  logged  lag  is  to  obtain  efficient  estimate  (Ekong  and  Onye,  2017).  Nonetheless,  the motivation to argument the lagged lag of the trade volume in the conditional variance equation is to solve for the likely problem of simultaneity bias in the conditional variance specification. Moreover, the rational for accommodating structural breaks in the conditional variance equation to smooth the sudden shifts in the variance due to the fact it is the specification that contains the persistence parameter which ignoring break in the equation could lead to over estimation of the parameter. However, the structural breaks will be added to the equation as dummy variables that take value 1 as the break occurs in conditional volatility onwards and otherwise it takes value 0. 
+Kuhe(2018) model the volatility persistence and asymmetry with breaks in the Nigerian stock returns using daily closing quotations of stock prices from 3rd July, 1999 to 12th June, 2017. The study used GARCH, EGARCH, and GJR-GARCH models with  and  without  structural  breaks. The estimates without breaks provide evidence of high persistence of shocks in the returns series but  when  incorporating  breaks  the  study  found  significant  reduction  in  shocks  persistence. However, there is  evidence of  asymmetry in  the returns series where positive shocks induce a larger increase in volatility when compared to the negative shocks of equal magnitude and the model that best fits the series is the EGARCH (1, 1) model.
+  From  the  above  foregoing  it  can  be  seen  that  there  is  extensive  literature  documenting  the behaviour  of  stock  exchange  market  returns  but  still  there  are  some  slits  to  carry  more investigation on. For example,  no study incorporates  the time until a specific volatility related events happen,while it has been empirically verified that adding the logged lag of trading time until volatility clustering event occurs plays a significant role in studying the market volatility. Moreover, the contribution of structural breaks in the analysis has been neglected while incorporating breaks proved to be important in volatility analysis. In addition, none of the studies incorporate the time until certain volatility related events occur
+\section*{Methodology} In this work we are addres this problem by adopting Accelerate Failure Time model (AFT) to predict a stock future price changes. We define the problem of volatility cluster changes in terms of survival analysis perspective.  
+
+\begin{equation}
+d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+\end{equation}
+
+
+\begin{equation}
+(x_{\text{centroid}}, y_{\text{centroid}}) = \left(\frac{\sum{x_i}}{m}, \frac{\sum{y_i}}{m}\right)
+\end{equation}
+
+
+
+
+\begin{equation}	
+		\ln(T) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + \epsilon \label{eq:1} 	
+\end{equation}
+
+
+
+ 
+
+\section*{Data Description}
+The study is based on data from 4000 observations and four variables, covering companies listed on the NSE20 share prce market from 2003 to 2023. The closing prices of these companies were analyzed during these periods.
+\begin{thebibliography}{9}
+
+\bibitem{Dutta2014}
+Dutta, S. (2014). Modelling Volatility: Symmetric or Asymmetric GARCH Models?
+\textit{Journal of Statistics: Advances in Theory and Applications}, \textbf{12}, 99--108.
+
+\bibitem{Dash2016}
+Dash, S., \& Behera, S. K. (2016). An Evolutionary Hybrid Fuzzy Computationally Efficient EGARCH Model for Volatility Prediction.
+\textit{Expert Systems with Applications}, \textbf{50}, 235--249.
+
+\bibitem{Adeniji2015}
+Adeniji, J. A., \& Kale, G. A. (2015). An Empirical Investigation of the Relationship between Stock Market Prices Volatility and Macroeconomic Variables’ Volatility in Nigeria.
+\textit{International Journal of Business and Social Research}, \textbf{5}(1), 16--24.
+
+\bibitem{Maderitsch2017}
+Maderitsch, K., \& Bouri, E. (2017). An Empirical Analysis of 24-hour Realized Volatilities and Transatlantic Volatility Interdependence.
+\textit{Journal of International Financial Markets, Institutions and Money}, \textbf{49}, 14--27.
+
+\end{thebibliography}
+
+\end{document}

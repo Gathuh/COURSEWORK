@@ -1,0 +1,99 @@
+\documentclass[twoside,a4paper,12pt]{article}
+
+\usepackage{fancyhdr,times,geometry,amsmath}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{comment}
+\geometry{a4paper, top=0.75in, bottom=0.5in, left=0.75in, right=0.75in}
+
+
+\begin{document}
+	
+	\begin{flushleft} 
+			\large{\bf{Name: Gathu Macharia     Registration Number: S030-01-2954/2021\\
+					   Name:Collins Kipyegon        Registration Number: S030-01-2154/2021\\}} \vspace*{0.75in}
+	\end{flushleft}
+	
+	\begin{center} \Large{ \bf{Modeling the Recovery Time of Stock Prices using Accelerated Failure Time Model }} \end{center}	
+
+
+\section*{Introduction}In financial markets, the assessment of recovery time for stock prices is of paramount importance for investors and stakeholders alike. This is especially true in the context of distressed securities, where understanding the expected timeframe for a return to normalcy can inform crucial decision-making. One statistical approach that has shown promise in this regard is the Accelerated Failure Time (AFT) model. Originally developed in the field of survival analysis, the AFT model has been successfully applied to various areas, including finance and economics.
+
+\section*{Problem statement}In the world of finance, how long it takes for a stock's price to go back up after a market downturn is important for making smart investments and managing risk. However, there is currently no good way to estimate how long this will take or to measure the uncertainty around these estimates. Additionally, it is not well understood how things like inflation rates, exchange rates, and sector performance can affect how quickly a stock's price recovers.
+
+
+
+\section*{Research Objectives} 
+\subsection*{General Objectives}The main objective is to model recovery time of a stock following decreases in share prices of companies using Accelerated Failure Time model (AFT). 
+\subsection*{Specific objectives}
+\begin{enumerate}
+	\item To estimate the parameters using efron method.
+	\item To estimate the survival rates using Kalbfleisch-Prentice method.
+	\item To compare the survival rates of different markets using weighted log rank test.
+	
+	
+	\item To fit an Accelerated Failure Time model.
+	
+	
+	
+
+\end{enumerate}	
+
+\begin{comment}
+\section*{Literature Review}
+In this literature review, we will discuss the impact of the COVID-19 pandemic on stock exchanges worldwide, the evaluation of changes in stock exchanges during the pandemic, and the use of accelerated failure time models (AFTMs) as an alternative to the Cox's regression model for time-to-event data.
+
+\noindent The COVID-19 pandemic has had a significant impact on stock exchanges worldwide. Bieszk-Stolorz and Dmytrow (2021) evaluated the changes on world stock exchanges in connection with the SARS-CoV-2 pandemic. They found that the pandemic led to significant changes in stock exchanges, including increased volatility, reduced liquidity, and a shift towards risk-averse investment strategies.
+\noindent The evaluation of changes in stock exchanges during the pandemic has been a focus of research. Ahmed Yahaya and Stephen Alaba John (2023) conducted a study on stock market liquidity and volatility on the Nigerian Exchange Limited. They found that the pandemic led to increased volatility and reduced liquidity in the Nigerian stock market.
+
+\noindent Alternative models for analyzing time-to-event data have been proposed in recent years. C Silambarasan and Elangovan Elangovan (2023) suggested using the accelerated failure time model (AFTM) as an alternative to the Cox's regression model for analyzing time-to-event data. They argued that the AFTM provides a more flexible and interpretable framework for analyzing time-to-event data.
+
+\noindent Tasneem Fatima Alam, M. Shafiqur Rahman, and Wasimul Bari (2022) conducted a study on the estimation for accelerated failure time models with small or rare event survival data. They found that the estimation of AFTMs with small or rare event survival data can be challenging due to the lack of sufficient data for estimating the model parameters. They proposed a new estimation method that addresses this issue.
+
+\end{comment}
+\section*{Methodology} 
+\noindent The Accelerated Failure Time (AFT) model is a type of survival analysis model used to analyze time-to-event data, where the event of interest is the failure or recovery of a system or process. The AFT model assumes that the survival time of a system or process is affected by a set of covariates, represented by the parameter $\theta$.  
+
+
+\begin{equation}	
+		\ln(T) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + \epsilon \label{eq:1} 	
+\end{equation}
+
+where :\\
+$T_i$ 	is the survival time.\\
+$\beta_0$ 	is the intercept.\\
+$X_1,X_2 \dots X_k$	 are the covariates\\
+$\beta_0,\beta_2 \dots \beta_k$ 	are the coefficients of covariates.\\
+$ \epsilon$      is the error term.\\
+
+\section*{Data Description}
+
+The study is based on the dataset of 62 companies listed in NSE for the period 2018 to 2023. There are five variables: inflation, exchange rates, closing price, duration, events that occurred, and  sectors which are a category of 3 macrosectors (industry, finance and service). The data sources are as follows:
+
+\begin{itemize}
+    \item \textbf{Stock Market Data:} Stock market data is sourced from the Wall Street Journal. Historical prices for the Nairobi Securities Exchange (NSE) can be found at \url{https://www.wsj.com/market-data/quotes/KE/XNAI/NSE/historical-prices}.
+    \item \textbf{Exchange Rates:} Central Bank of Kenya (CBK) provides exchange rates data. The data can be accessed at \url{https://www.centralbank.go.ke/rates/forex-exchange-rates/}.
+    \item \textbf{Inflation Rate:} Inflation rate data for a similar period is obtained from the Central Bank of Kenya. The data can be accessed at \url{https://www.centralbank.go.ke/inflation-rates/}.
+
+
+\end{itemize}
+\begin{thebibliography}{}
+\bibitem{Bieszk-Stolorz}
+Bieszk-Stolorz, Beata, and Krzysztof Dmytrów. (2021). Evaluation of Changes on World Stock Exchanges in Connection with the SARS-CoV-2 Pandemic. Survival Analysis Methods \textit{article} \newblock\href{https://doi.org/10.3390/risks9070121}{https://doi.org/10.3390/risks9070121}
+
+
+\bibitem{Ahmed Yahaya, Stephen Alaba John}
+ Ahmed Yahaya, Stephen Alaba John.(2023). Stock Market liquidity and volatility on the Nigerian Exchange Limited. World Journal of Advanced Research and Reviews\textit{Resarch Article}\newblock\href{https://doi.org/10.30574/wjarr.2023.20.3.2333}{https://doi.org/10.30574/wjarr.2023.20.3.2333}
+
+\bibitem{ ElangovanRe Elangovan}
+C SilambarasanRe, ElangovanRe Elangovan. (2023). Accelerated Failure Time Model as an Alternative to the Cox's Regression Model Time to Event Data. \textit{Journal Article} \newblock\href{https://www.researchgate.net/publication/368757083}{https://www.researchgate.net/publication/368757083}
+
+\bibitem{Alam et al.}
+Tasneem Fatima Alam1, M. Shafiqur Rahman1 and Wasimul Bari2. (2022). On estimation for accelerated failure
+time models with small or rare event survival data \textit{Journal article} \newblock \href{https://doi.org/10.1186/s12874-022-01638-1}{https://doi.org/10.1186/s12874-022-01638-1}
+
+
+\end{thebibliography}
+
+\end{document}

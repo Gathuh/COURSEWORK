@@ -1,0 +1,80 @@
+\documentclass[twoside,a4paper,12pt]{article}
+
+\usepackage{fancyhdr,times,geometry,amsmath}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\geometry{a4paper, top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
+
+
+\begin{document}
+	
+	\begin{flushleft} 
+			\large{\bf{Name: Gathu Macharia     Registration Number: S030-01-2954/2021\\
+					   Name:Collins Kipyegon        Registration Number: S030-01-2154/2021\\}} \vspace*{0.75in}
+	\end{flushleft}
+	
+	\begin{center} \Large{ \bf{Modeling the Recovery Time of Stock Prices using Accelerated Failure Time Model }} \end{center}	
+
+
+\section*{Introduction}In financial markets, the assessment of recovery time for stock prices is of paramount importance for investors and stakeholders alike. This is especially true in the context of distressed securities, where understanding the expected timeframe for a return to normalcy can inform crucial decision-making. One statistical approach that has shown promise in this regard is the Accelerated Failure Time (AFT) model. Originally developed in the field of survival analysis, the AFT model has been successfully applied to various areas, including finance and economics.
+
+\section*{Problem statement}The primary objective of this project is to assess the recovery time of stock prices following a significant market downturn using the Accelerated Failure Time (AFT) model. The focus of this study is to estimate the expected recovery time and quantify the uncertainty associated with this prediction. This project will also investigate the impact of various factors, such as market volatility, company size, and industry sector, on the recovery time of stock prices. The AFT model will be applied to historical stock price data, and the results will be compared to those obtained from other statistical models. The ultimate goal is to provide a robust and reliable method for estimating the recovery time of stock prices, which can inform investment decisions and risk management strategies.
+
+
+\section*{Research Objectives} 
+\subsection*{General Objectives}In this study, we aim to assess the possibilities of recovery following decreases in share prices of companies listed on the Nairobi Stock Exchange during three distinct time periods: 2008-2009, 2011-2013, and 2020-2023. These periods were chosen due to their significance in recent market history, marked by notable market downturns and subsequent recoveries.
+\subsection*{Specific objectives}
+\begin{itemize}
+	
+	\item To fit   Accelerated Failure Time model.
+	\item  To test adequacy of the model.
+	\item To assess the probability and intensity of decrease and increase of 
+prices of shares in particular macrosectors during the crisis 
+
+	\item To compare the situation in the stock market macrosectors in the 
+observed period of the bear market  and during the financial crisis.
+
+	
+	
+	
+\end{itemize}
+
+\section*{Methodology} 
+
+The analysis of the downside risk followed by recovery is conducted by means of the logit model written 
+\begin{equation}
+logit(p)=ln(\frac{p}{1-p})=\alpha_0 +\sum(\alpha_i x_i)
+ \label{eq:logit_model}
+\end{equation}
+where:
+\begin{itemize}
+
+where:\\
+$p=P(Y=1|x_1,x_2,\ldots,x_m)$
+
+
+The analysis of the downside risk followed by recovery is conducted by means of thelogit
+model written (Kleinbaum and Klein, 2002; Gruszczyński, 2012; Markowicz, 2012; Bieszk-Stolorz and Markowicz, 2014):
+\begin{equation}
+\ln \left( \frac{p}{1-p} \right) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_k x_k
+\end{equation}
+The Accelerated Failure Time (AFT) model is a type of survival analysis model used to analyze time-to-event data, where the event of interest is the failure or recovery of a system or process. The AFT model assumes that the survival time of a system or process is affected by a set of covariates, represented by the parameter $\theta$.  
+
+
+\begin{equation}	
+		\ln(T) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + \epsilon \label{eq:1} 	
+\end{equation}
+
+where :\\
+$T_i$ 	is the survival time.\\
+$u_i$ 	is the intercept.\\
+$x_1,x_2 \dots x_p$	 are the covariates\\
+$\beta_0,\beta_2 \dots \beta_p$ 	are the coefficients of covariates.\\
+$\sigma$ 	is the scale parameter.\\
+$\omega$	 is the error term.
+ 
+
+
+
+\end{document}

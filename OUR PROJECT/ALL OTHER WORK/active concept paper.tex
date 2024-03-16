@@ -1,0 +1,89 @@
+\documentclass[twoside,a4paper,12pt]{article}
+
+\usepackage{fancyhdr,times,geometry,amsmath}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\geometry{a4paper, top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
+
+
+\begin{document}
+	
+	\begin{flushleft} 
+			\large{\bf{Name: Gathu Macharia     Registration Number: S030-01-2954/2021\\
+					   Name:Collins Kipyegon        Registration Number: S030-01-2154/2021\\}} \vspace*{0.75in}
+	\end{flushleft}
+	
+	\begin{center} \Large{ \bf{Modeling Volatility Cluster Changes in Stock Market using Accelerated Failure Time Model }} \end{center}	
+
+
+\section*{Introduction} Stock market prediction focus on developing approaches to determine the future price of a stock or other financial products. Stock market predictions is regarded as a challenging task due to the high volatiity and non linear relationship, driven short term flactuations in investment demand. Some researchers have even found that man standard econemetric models are unable to produce better prediction than the random walk model which has also encouraged researchers to develope more predictive models.
+
+
+
+\section*{Problem statement}In the field of stock market forecasting, most early models were dependant on convectional statistical methods such as time series models and multivariate analysis.  In this method the stock movement was modelled as a function of time series and was solved as regression problem. However stock prices are difficult to predict due to their chaotic nature. Furthermore, there are some assumptions about the variables used in statistical methods, which may not be suitable for those dataset that do not follow the statistical distribution. Most models have not  solved the problem for time untill voltility cluster changes in stock markets.
+
+\noindent More generally survival analysis involve the modeling of time to event data. in the context of volatility in stock market forecast , volatility clustering are considered as two events in survival analysis literature. We attempt to answer quetions about volatility changes at different states and what rate will stock prices fall or rise.
+\section*{Research Objectives} 
+\subsection*{General Objectives}To model the time until volatility cluster changes which can be used as the indicators to determine the future stock price.
+\subsection*{Specific objectives}
+\begin{itemize}
+	\item To fit  K-means algorithm using the closing price to determine high and low volatility cluster.
+	\item To fit   Accelerated Failure Time model.
+	\item  To test adequacy of the model.
+	\item To model  time until the volatility clustering change.
+	\item To check the accuaracy of the model.
+	
+	
+\end{itemize}
+
+\section*{Methodology} In this work we are addres this problem by adopting Accelerate Failure Time model (AFT) to predict a stock future price changes. We define the problem of volatility cluster changes in terms of survival analysis perspective.  
+
+
+\begin{equation}
+d = \sqrt{(x_2 - x_1)^2 }
+\end{equation}
+
+
+\begin{equation}
+(x_{\text{centroid}}) = (\frac{\sum{x_i}}{m})
+\end{equation}
+
+\begin{equation}	
+		\ln(T_i) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + \epsilon \label{eq:1} 	
+\end{equation}
+
+Where:
+\begin{align*}
+d &: \text{is the Euclidean distance between each data pont to each centroid}\\
+T_i & : \text{Survival time} \\
+\beta_0 & : \text{Intercept} \\
+x_1, x_2, \dots, x_p & : \text{Vector of covariates} \\
+\beta_1, \beta_2, \dots, \beta_p & : \text{Vector of coefficients of covariates} \\
+\epsilon & : \text{Error term}
+\end{align*}
+
+
+ 
+
+\section*{Data Description}
+The study is based on the dataset of 61 companies listed in NSE foe period 2018 to 2023. There are four variables inflation, exchange rates, closing price and Duration and event that occured. The data source is from:\\ CBK for exchange rates \newblock \href{https://www.centralbank.go.ke/rates/forex-exchange-rates/}{https://www.centralbank.go.ke/rates/forex-exchange-rates/}.\\Inflation rate for similar period is \newblock\href{https://www.centralbank.go.ke/inflation-rates/}{https://www.centralbank.go.ke/inflation-rates/}.\\ Wall street Journal for Stock market data \newblock\href{https://www.wsj.com/market-data/quotes/KE/XNAI/KCB/historical-prices}{https://www.wsj.com/market-data/quotes/KE/XNAI/KCB/historical-prices}
+\begin{thebibliography}{9}
+\bibitem{Bieszk-Stolorz}
+Bieszk-Stolorz, Beata, and Krzysztof Dmytrów. (2021). Evaluation of Changes on World Stock Exchanges in Connection with the SARS-CoV-2 Pandemic. Survival Analysis Methods \textit{article} \newblock\href{https://doi.org/10.3390/risks9070121}{https://doi.org/10.3390/risks9070121}
+
+
+\bibitem{Ahmed Yahaya, Stephen Alaba John}
+ Ahmed Yahaya, Stephen Alaba John.(2023). Stock Market liquidity and volatility on the Nigerian Exchange Limited. World Journal of Advanced Research and Reviews\textit{Resarch Article}\newblock\href{https://doi.org/10.30574/wjarr.2023.20.3.2333}{https://doi.org/10.30574/wjarr.2023.20.3.2333}
+
+\bibitem{ ElangovanRe Elangovan}
+C SilambarasanRe, ElangovanRe Elangovan. (2023). Accelerated Failure Time Model as an Alternative to the Cox's Regression Model Time to Event Data. \textit{Journal Article} \newblock\href{https://www.researchgate.net/publication/368757083}{https://www.researchgate.net/publication/368757083}
+
+\bibitem{Alam et al.}
+Tasneem Fatima Alam1, M. Shafiqur Rahman1 and Wasimul Bari2. (2022). On estimation for accelerated failure
+time models with small or rare event survival data \textit{Journal article} \newblock \href{https://doi.org/10.1186/s12874-022-01638-1}{https://doi.org/10.1186/s12874-022-01638-1}
+
+
+\end{thebibliography}
+
+\end{document}

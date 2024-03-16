@@ -1,0 +1,23 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{Declaration by the Students}{3}{Doc-Start}%
+\contentsline {section}{Declaraion by the Supervisor}{5}{Doc-Start}%
+\contentsline {section}{Dedication}{7}{Doc-Start}%
+\contentsline {chapter}{\numberline {1.}Introduction}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Background of the Study}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Statement of the Problem}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Justification of the Study}{11}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Objectives of the Study}{11}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}General objectives}{11}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Specific objectives}{11}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Significance of the Study}{11}{section.1.6}%
+\contentsline {chapter}{\numberline {2.}Litereture Review}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Intoduction}{13}{section.2.1}%
+\contentsline {chapter}{\numberline {3.}Methodology}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}%
+\contentsline {chapter}{\numberline {4.}Results and Discussion}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Conclusion}{17}{section.4.2}%
+\contentsline {chapter}{\numberline {5.}Conclusion}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recommendations for Further Research}{19}{section.5.2}%

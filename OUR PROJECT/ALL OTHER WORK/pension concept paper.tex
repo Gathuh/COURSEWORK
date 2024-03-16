@@ -1,0 +1,101 @@
+\documentclass[twoside,a4paper,12pt]{article}
+
+\usepackage{fancyhdr,times,geometry,amsmath}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+
+\geometry{a4paper, top=0.75in, bottom=0.75in, left=0.75in, right=0.75in}
+
+
+\begin{document}
+	
+	\begin{flushleft} 
+			\large{\bf{Name: Gathu Macharia     Registration Number: S030-01-2954/2021\\
+					   Name:Collins Kipyegon        Registration Number: S030-01-2154/2021\\}} \vspace*{0.75in}
+	\end{flushleft}
+	
+	\begin{center} \Large{ \bf{Modeling pension benefit payments using Accelerated Failure Time}} \end{center}	
+
+
+\section*{Introduction} Pension benefits are a critical component of retirement planning for many individuals. Understanding the factors that affect the timing and amount of pension benefit payments is essential for both pension providers and beneficiaries. In this concept paper, we propose the use of the Accelerated Failure Time (AFT) model to analyze pension benefit payments, specifically in the case of lump-sum payments.
+
+
+\section*{Problem statement}In Kenya, pension providers and beneficiaries face several challenges in understanding the factors that affect the timing and amount of pension benefit payments. Currently, pension providers and beneficiaries rely on statistics such as average time until pension benefit payment, to understand the timing and amount of pension benefit payments. However, these statistics do not account for the effects of various factors, such as age, gender, and health status, on the timing and amount of pension benefit payments.\\
+
+\noindent Therefore, there is a need for other models that can account for these factors and provide more accurate estimates of the timing and amount of pension benefit payments.
+
+
+\section*{Research Objectives} 
+\subsection*{General Objectives}To model pension benefit payments, specifically in the case of lump-sum payments, using the Accelerated Failure Time (AFT) model. The study aims to estimate the actual time until the pension benefit payment and to account for various factors that affect the timing and amount of pension benefit payments.
+\subsection*{Specific objectives}
+\begin{itemize}
+	\item To develop an Accelerated Failure Time (AFT) model for pension benefit payments, specifying the appropriate distribution for the error term and testing the assumptions of the model.
+	\item To estimate the effect of various factors, such as age, gender, and others, on the timing and amount of pension benefit payments using the AFT model.
+	\item  To compare the performance of the AFT model with other survival analysis models  in estimating the timing and amount of pension benefit payments.
+	\item To assess the sensitivity of the AFT model to different specifications of the error term distribution and the choice of covariates.
+	
+	
+	
+\end{itemize}
+
+\section*{Methodology} In this work we are addres this problem by adopting Accelerate Failure Time model (AFT) to model the survival probability for an individual to survive upto lumpsum payment. We define the problem of survival upto a lump-sum payment in terms of survival analysis perspective.  
+
+
+
+
+
+
+
+
+\begin{equation}	
+		\ln(T) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + \epsilon \label{eq:1} 	
+\end{equation}
+
+
+\begin{equation}
+y_i=ln(T_i)=u+x_i'\beta+\sigma \omega_i
+\end{equation}
+where :\\
+$T_i$ 	is the survival time beyond the period of lumpsum payment\\
+$u_i$ 	is the intercept\\
+$x_1,x_2 \dots x_p$	 are the covariates\\
+$\beta_0,\beta_2 \dots \beta_p$ 	are the coefficients of covariates\\
+$\sigma$ 	is the scale parameter\\
+$\omega$	 is the error term
+
+
+ 
+
+\section*{Data Description}
+From NSSF
+\begin{thebibliography}{9}
+
+\bibitem{R Mohanasundari2020}
+R Muhanasundari, (2020). Survival Analysis: Accelarated Failure Time
+\textit{Journal of Statistics: Advances in Theory and Applications}, \textbf{12}, 99--108.
+
+
+\bibitem{Monda2019}
+Mondal M, Rahman MS, (2019). Bias-reduced and separation-proof GEE with small or sparse longitudinal binary data. Stat Med.  38(14):2544–60.
+\textit{International Journal of Business and Social Research}, \textbf{5}(1), 16--24.
+
+\bibitem{Tasneem Fatima Alam1, M. Shafiqur Rahman1* and Wasimul Bari2}
+Tasneem Fatima Alam, M. Shafiqur Rahman,Wasimul Bari (2022), On estimation for accelerated failure
+time models with small or rare event survival, \textit{Journal article} \newblock\href{https://doi.org/10.1186/s12874-022-01638-1}{https://doi.org/10.1186/s12874-022-01638-1}
+
+ 
+ \bibitem{liu2020}
+ Enwu Liu, Enwu Liu, Karen Lim, (2023), Using theWeibull Accelerated
+Failure Time Regression Model to
+Predict Time to Health Events. \textit{Journa article}
+\newblock\href{https://doi.org/
+10.3390/app132413041}{https://doi.org/
+10.3390/app132413041}
+
+
+\end{thebibliography}
+
+\end{document}
